@@ -1,2 +1,2 @@
 # MSc-Project
-Details and all materials used for my MSc project
+Details and all materials that will be used for my MSc project
