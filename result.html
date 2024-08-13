@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .result {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .result p {
+            font-size: 1.2em;
+        }
+        .positive {
+            color: green;
+        }
+        .negative {
+            color: red;
+        }
+        .neutral {
+            color: gray;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sentiment Analysis Result</h1>
+    <div class="result">
+        <p>The sentiment of the provided review is: <strong class="{{ sentiment_class }}">{{ sentiment }}</strong></p>
+        <p>Probability: {{ probability }}</p>
+        <button class="button" onclick="window.location.href='/'">Analyze Another Review</button>
+    </div>
+</body>
+</html>
